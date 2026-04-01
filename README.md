@@ -1,65 +1,112 @@
-🦜 YouTube & Website Content Summarizer (GenAI)
+<h1>🦜 YouTube & Website Content Summarizer (GenAI)</h1>
 
-A simple GenAI-powered web app that summarizes content from YouTube videos and websites into concise, meaningful insights using Large Language Models (LLMs).
+<p>
+A simple GenAI-powered web app that summarizes content from 
+<strong>YouTube videos</strong> and <strong>websites</strong> into concise insights using LLMs.
+</p>
 
-🚀 Features:
-🔗 Accepts both YouTube URLs and website links
-📄 Extracts:
-YouTube transcripts
-Webpage content
-✨ Generates a clear 300-word summary
-⚡ Fast and interactive UI using Streamlit
-🧠 Powered by LLM (LLaMA 3.3 via Groq)
+<hr>
 
-🛠️ Tech Stack:
-Python
-Streamlit – UI framework
-LangChain – LLM orchestration
-Groq API – LLaMA 3.3 model
-YouTube Transcript API – transcript extraction
-UnstructuredURLLoader – website content extraction
+<h2>🚀 Features</h2>
+<ul>
+  <li>Accepts both <strong>YouTube URLs</strong> and <strong>website links</strong></li>
+  <li>Extracts:
+    <ul>
+      <li>YouTube transcripts</li>
+      <li>Webpage content</li>
+    </ul>
+  </li>
+  <li>Generates a <strong>300-word summary</strong></li>
+  <li>Fast UI built with Streamlit</li>
+  <li>Powered by LLaMA 3.3 via Groq</li>
+</ul>
 
-📂 Project Structure
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Dependencies
-└── README.md              # Project documentation
+<hr>
 
-⚙️ Installation & Setup:
-1. Clone the repository
-git clone https://github.com/your-username/yt-website-summarizer.git
+<h2>🛠️ Tech Stack</h2>
+<ul>
+  <li>Python</li>
+  <li>Streamlit</li>
+  <li>LangChain</li>
+  <li>Groq API (LLaMA 3.3)</li>
+  <li>YouTube Transcript API</li>
+  <li>UnstructuredURLLoader</li>
+</ul>
+
+<hr>
+
+<h2>📂 Project Structure</h2>
+<pre>
+├── app.py
+├── requirements.txt
+└── README.md
+</pre>
+
+<hr>
+
+<h2>⚙️ Installation & Setup</h2>
+
+<h3>1. Clone the repository</h3>
+<pre><code>git clone https://github.com/your-username/yt-website-summarizer.git
 cd yt-website-summarizer
-2. Create a virtual environment
-conda create -p venv python=3.10 -y
+</code></pre>
+
+<h3>2. Create virtual environment</h3>
+<pre><code>conda create -p venv python=3.10 -y
 conda activate ./venv
-3. Install dependencies
-pip install -r requirements.txt
-4. Run the app
-streamlit run app.py
+</code></pre>
 
-🔑 Usage:
-Enter your Groq API Key in the sidebar
-Paste a YouTube or Website URL
-Click "Summarize"
-Get a clean summary in seconds
+<h3>3. Install dependencies</h3>
+<pre><code>pip install -r requirements.txt
+</code></pre>
 
-🧠 How It Works:
-Detects whether the input is a YouTube link or a website
-For YouTube:
-Extracts video ID
-Fetches transcript using YouTube Transcript API
-For websites:
-Loads content using LangChain’s URL loader
-Sends extracted text to LLM with a prompt
-Returns a structured summary
+<h3>4. Run the app</h3>
+<pre><code>streamlit run app.py
+</code></pre>
 
-⚠️ Limitations:
-Some YouTube videos may not have transcripts
-Certain websites may block scraping
-Output quality depends on input content and prompt
+<hr>
 
-🔮 Future Improvements:
-🌍 Multi-language summaries
-📌 Key insights / bullet-point extraction
-📊 Summary length customization
-🧾 Download summaries (PDF/Text)
-🎯 Better error handling
+<h2>🔑 Usage</h2>
+<ol>
+  <li>Enter your <strong>Groq API Key</strong></li>
+  <li>Paste a <strong>YouTube or Website URL</strong></li>
+  <li>Click <strong>Summarize</strong></li>
+  <li>Get summary instantly</li>
+</ol>
+
+<hr>
+
+<h2>🧠 How It Works</h2>
+<ul>
+  <li>Detects URL type (YouTube or website)</li>
+  <li>Extracts transcript or webpage content</li>
+  <li>Sends data to LLM with prompt</li>
+  <li>Returns summarized output</li>
+</ul>
+
+<hr>
+
+<h2>⚠️ Limitations</h2>
+<ul>
+  <li>Some YouTube videos may not have transcripts</li>
+  <li>Some websites may block scraping</li>
+  <li>Output depends on input quality</li>
+</ul>
+
+<hr>
+
+<h2>🔮 Future Improvements</h2>
+<ul>
+  <li>Multi-language summaries</li>
+  <li>Key insights extraction</li>
+  <li>Custom summary length</li>
+  <li>Download as PDF/Text</li>
+</ul>
+
+<hr>
+
+<h2>🤝 Contributing</h2>
+<p>Feel free to fork this repo and submit a pull request.</p>
+
+<hr>
+
